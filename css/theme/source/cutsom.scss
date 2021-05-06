@@ -1,0 +1,342 @@
+/**
+ * Custom theme for reveal.js. This is a custom theme for Jenny's presentation.
+ *
+ * By Jenny Nguyen, http://jennyn.ca
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(fonts/source-sans-pro/source-sans-pro.css);
+@import url(fonts/Great_Vibes/great-vibes.css);
+@import url(fonts/Viga/viga.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #032638;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 20px;
+$mainFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #FDB816;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1em;
+
+$main-color: rgb(28, 20, 37);
+$title-font: "Viga", sans-serif;
+$content-font: "Open Sans", sans-serif;
+$code: "Courier New", monospace;
+
+$dark-color: #032638;
+
+section.has-light-background {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-color;
+  }
+}
+
+.filter-dark {
+	filter: invert(12%) sepia(19%) saturate(3107%) hue-rotate(161deg) brightness(92%) contrast(98%);
+}
+
+.filter-light {
+	filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(294deg) brightness(118%) contrast(101%);
+}
+.reveal {
+
+
+  .title {
+
+
+    &__title {
+      font-size: 2.8em !important;
+      font-family: $title-font !important;
+    }
+
+    &__tagline {
+      font-size: 1.5em !important;
+	  margin-top: 10px;
+	  text-transform: capitalize;
+	  color: $linkColor;
+    }
+  }
+
+  .intro {
+    display: flex !important;
+    height: 100vh;
+    top: 0 !important;
+    padding: 0 !important;
+
+    &__title {
+      font-family: $title-font;
+      color: $main-color;
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      font-size: 5em;
+    }
+
+    &__left {
+      height: 100vh;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__right {
+      background-color: white;
+      height: 100vh;
+      width: calc(100% - 400px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    &__list {
+      font-size: 3em;
+      text-align: left;
+    }
+
+    &__list-item {
+      margin: 20px 0px;
+    }
+  }
+
+  .transition {
+    &__title {
+      font-family: $title-font;
+      font-size: 5em;
+      width: 40vw;
+      text-align: left;
+      margin-left: 50px;
+    }
+
+    &__slide {
+      display: flex !important;
+      padding-left: 75px;
+      align-items: center;
+    }
+  }
+
+  .definition {
+    display: flex !important;
+    align-items: center;
+    padding-left: 75px !important;
+    &__text {
+      font-size: 6em;
+      text-align: left;
+      width: 74%;
+      line-height: 1.2;
+    }
+  }
+
+  .side-label {
+    transform: rotate(270deg);
+    height: 35%;
+    font-size: 6em !important;
+    text-align: left;
+    font-family: $title-font !important;
+    margin-top: 30px;
+
+    &--small {
+      height: 28%;
+    }
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    &--col {
+      flex-direction: column;
+    }
+  }
+
+  .width {
+    &--30 {
+      width: 30%;
+    }
+    &--48 {
+      width: 48%;
+    }
+    &--55 {
+      width: 55%;
+    }
+    &--90 {
+      width: 90%;
+    }
+  }
+
+  .ol {
+    font-size: 5em;
+    margin-left: 75px;
+    text-align: left;
+
+    li {
+      margin: 40px 0px;
+    }
+  }
+
+  .large {
+    font-size: 5em;
+    margin-bottom: 30px;
+    margin-left: 75px;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .mar-left {
+    margin-left: 75px;
+  }
+
+  .slide {
+    &__title {
+      font-size: 60px !important;
+      width: auto;
+      margin-left: 75px;
+      color: $main-color;
+      margin-top: 75px;
+      position: absolute;
+      font-family: $title-font;
+    }
+
+    &__list {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 75px;
+      font-size: 3em;
+      text-align: left;
+      width: 90vw;
+    }
+
+    &__list-item {
+      margin-bottom: 50px;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .code {
+    font-family: $code;
+  }
+
+  .medium {
+    width: 55%;
+    box-shadow: -5px 5px 5px #f5f5f5;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+
+  .example__link {
+    font-size: 6em;
+    color: black;
+  }
+
+  .end {
+    font-size: 5em;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    margin-top: 50px;
+  }
+}
+
+.fillbox{
+	background-color: $backgroundColor;
+	padding: 3%;
+}
+
+.inline{
+	display: inline-block;
+}
+
+#no-transform{
+	text-transform: none;
+}
+
+a.footnote {
+  text-decoration:none;
+  // background-color: #09203f;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 2px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+} 
+
+a.footnote span {
+  z-index: 1000000;
+  opacity: 0;
+  position: fixed;
+  left: 15px; 
+  bottom: 20px;
+  margin-left: 0px;
+  margin-right: 18px;
+  padding:14px 20px;
+  background-color: #161616;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+  color:#fff;
+  text-align: left;
+  font-size: .6em;
+}
+
+a.footnote:hover span {
+  z-index: 9;
+  opacity: 1;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+
+
+@mixin bodyBackground() {
+	@include radial-gradient( #09203f, #537895 );
+} 
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
