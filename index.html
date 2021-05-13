@@ -91,6 +91,8 @@
 						<img class="fragment"  src="assets/MeasuresNew.svg" width=95% />
 					</div>
 				</section>
+				<section data-background-color="#f3e7e9" data-background-image="assets/FullModelSimple.svg" data-background-size="70%" >
+				</section>
 				<section data-background-color="#47549D">
 					<h1>Addressing Sample Size</h1>
 					<h2 style="text-transform: none;">n = 68 → n = 636</h2>
@@ -105,7 +107,7 @@
 						<li>OCD group was dropped because low sample size (n=17)</li>
 					</ul>
 				</section>
-				<section data-background-iframe="assets/sampletable.htm" data-background-interactive data-background-color="#f3e7e9">
+				<section data-background-iframe="assets/SampleTableSimple.htm" data-background-interactive data-background-color="#f3e7e9">
 				</section>
 			
 
@@ -132,21 +134,41 @@
 						</div>
 					</div>
 				</section>
-				<section data-background-iframe="assets/FitMeasures.htm" data-background-interactive data-background-color="#fff">
-				</section>
-				<section data-background-color="#fff">
-					<h1>Full Model</h1>
-					<img src="assets/FullModel.svg" width=100% />
+				
+				<section data-background-color="#fff" data-background-image="assets/FullModelResults-01.svg" data-background-size="90%" >
 				</section>
 				<section data-background-iframe="assets/FullModelFit.htm" data-background-interactive data-background-color="#fff">
 				</section>
-				<section data-background-iframe="assets/ModelTrimming.htm" data-background-interactive data-background-color="#fff">
-				</section>
-				<section data-background-color="#fff">
-					<h1>Final Model</h1>
-					<img src="assets/FinalModel.svg" width=100% />
+				<section data-background-color="#fff" data-background-image="assets/FinalModelResults-01.svg" data-background-size="90%" >
 				</section>
 				<section data-background-iframe="assets/FinalModelFit.htm" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-color="#E1E9F9">
+					<h1>Re-running analysis with the ABAS and CBCL</h1>
+					<img src="assets/remixicons/Media/repeat-2-line.svg" width=15% style="padding: .5em"  class="filter-dark"/>
+					<div class="r-hstack">
+						<div class='fragment' style="padding: .5em" width=30%>
+							The analysis was re-run with the <b>Social and Communication Subscales of the ABAS</b> (reversed for interpretability) as well as the <b>Social Problems subscale of the CBCL</b>
+						</div>
+					</div>
+				</section>
+				<section data-background-iframe="assets/ValidationTables.htm" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-iframe="assets/FinalValidation.html" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-color="#035B83">
+					<h1>Discussion</h1>
+					<ul>
+						<li>Consistent with previous literature, we found a significant effect of IQ, Sensory Profile, Anxiety, Attention, Language, and RRBs on social communication difficulties.</li>
+						<li>Contrary to past studies, higher SES (i.e., caregiver education and household income) is associated with more social communication difficulties</li>
+						<li>RRBs and sensory atypicalities (two core symptoms of ASD) having the most pronounced association with social communication difficulties
+							<ul>
+								<li>When running a SEM model with just Sensory Profile and RRBs as factors, the model fit is comparable to the 7 factor model.</li>
+								<li><b>Question:</b> Could this potentially cause a paradigm shift in how we perceive social communication as construct of ASD? Are social communication difficulties specific to ASD a manifestation of sensory issues and RRBs? </li>
+							</ul>
+						</li>
+						<li>When replicating results the ABAS and CBCL, our hypothesized model explained the variability in social and communication scores well. Furthermore, the sensory and RRBs were consistently significant factors across these two validation measures.</li>
+					</ul>
 				</section>
 				<section data-background-color="#E1E9F9">
 					<h1>Item-level Analysis</h1>
@@ -159,17 +181,19 @@
 				</section>
 				<section data-background-iframe="assets/ItemLevelTables.htm" data-background-interactive data-background-color="#fff">
 				</section>
+				<section data-background-iframe="assets/ItemPlot.html" data-background-interactive data-background-color="#fff">
+				</section>
 
 
 				<section data-background-color="#035B83">
-					<h1>Conclusions</h1>
+					<h1>Item-level Conclusions</h1>
 					<ul>
-						<li>Consistent with previous literature, we found a significant effect of IQ, Sensory Profile, Anxiety, Attention, Language, RRBs and SES on social communication difficulties, with RRBs and sensory atypicalities (two core diagnostic symptoms of ASD) having the most pronounced association.</li>
-						<li>Our item-level analysis also showed that RRBs and sensory atypicalities were significant factors for 27 out of 28 of the items. After correction for multiple comparisons, SES were not significant determinants of any of the items.</li>
-						<li>Our findings are a preliminary step toward determining potentially personalized  supports.</li>
+						<li>Our item-level analysis showed that RRBs and sensory atypicalities were significant factors for 27 out of 28 of the items. After correction for multiple comparisons, SES were not significant determinants of any of the items.</li>
+						<li>The directionality of parameter estimates for Anxiety, Attention and IQ are inconsistent for different items. This could dilute the parameter estimate for the social communication total as items may cancel each other out. This could also explain the differences in parameter estimates between the ABAS, CBCL, SCQ.  </li>
+						<li>Our findings are a preliminary step toward determining potentially personalized supports.</li>
 					</ul>
 				</section>
-				</section>
+	
 	
 			</section>
 
@@ -185,7 +209,6 @@
 				<section data-background-color="#035B83">
 					<h1>Next Steps</h1>
 					<ul>
-						<li>Re-run SEM results using ABAS and CBCL social measures, keeping in mind comments about interpretation from committee</li>
 						<li>Prepare and submit manuscript for SEM paper</li>
 						<li>Apply supervised machine learning techniques (regression) to see which if these factors are predictive of SCQ score</li>
 						<li>Conduct multi-view clustering analysis to determine subgroups</li>
@@ -436,7 +459,14 @@
 					</li>
 				</ol>
 			</div>
+			<section data-background-iframe="assets/FitMeasures.htm" data-background-interactive data-background-color="#fff">
 			</section>
+			<section data-background-iframe="assets/sampletable.htm" data-background-interactive data-background-color="#f3e7e9">
+			</section>
+			<section data-background-iframe="assets/ModelTrimming.htm" data-background-interactive data-background-color="#fff">
+			</section>
+
+		</section>
 
 		</div>
 	</div>
