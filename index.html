@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>2021-05-06: Jenny Nguyen SEM Update</title>
+	<title>2021-05-12: Jenny Nguyen SEM Update</title>
 
 	<link rel="stylesheet" href="dist/reset.css" />
 	<link rel="stylesheet" href="dist/reveal.css" />
@@ -69,6 +69,137 @@
 				<section data-background-color="#f3e7e9">
 					<img src="assets/Objectives.svg" width=100% />
 				</section>
+				
+			</section>
+
+		
+
+			<!-- Changes -->
+			<section>
+				<section data-background="assets/bg/Ngaruroro.svg" data-background-color="#035B83">
+					<div class="fillbox">
+						<img src="assets/remixicons/Development/git-branch-line.svg" class="filter-light" width=50 />
+						<h1>Implementation of Changes</h1>
+					</div>
+				</section>
+				
+				<section data-background-color="#f3e7e9">
+					<h1>Reducing Variables</h1>
+					<h2 style="text-transform: none;">49 variables → 18 variables</h2>
+					<div class="r-stack">
+						<img class="fragment fade-out" src="assets/Measures.svg" width=95% />
+						<img class="fragment"  src="assets/MeasuresNew.svg" width=95% />
+					</div>
+				</section>
+				<section data-background-color="#47549D">
+					<h1>Addressing Sample Size</h1>
+					<h2 style="text-transform: none;">n = 68 → n = 636</h2>
+					<p>The following steps helped to improve sample size:</p>
+					<ul>
+						<li>Reducing the number of factors and variables</li>
+						<li>Requesting the most up-to-date POND export</li>
+						<li>Combining language measures (i.e., OWLS-I, OWLS-II, PLS-4, PLS-5)</li>
+						<li>Combining CBCL 0-6 years and 6-18 years</li>
+						<li>For anxiety, SPENCE and RCADS were combined, but missing data was still significant. We opted to use CBCL — Anxiety Problems instead</li>
+						<li>Removed the need to apply a <u>"threshold of missingness"</u> to drop data</li>
+						<li>OCD group was dropped because low sample size (n=17)</li>
+					</ul>
+				</section>
+				<section data-background-iframe="assets/sampletable.htm" data-background-interactive data-background-color="#f3e7e9">
+				</section>
+			
+
+			</section>
+
+			<!-- SEM -->
+			<section>
+				<section data-background="assets/bg/Aare.svg" data-background-color="#035B83">
+					<div class="fillbox">
+						<img src="assets/remixicons/Business/calculator-fill.svg" class='filter-light' width=55 />
+						<h1>Structural Equation Modeling (SEM)</h1>
+					</div>
+				</section>
+				<section data-background-color="#E1E9F9">
+					<h1>Modeling Trimming Approach</h1>
+					<img src="assets/ModelTrimming.svg" width=20% style="padding: .5em" />
+					<div class="r-hstack">
+						<div class='fragment' style="padding: .5em" width=30%>
+							<ul>
+								<li>We have chosen to take a model-trimming approach, where we start with our initial hypothesized model, a model which includes the <b>full set of features</b>, to predict the 28-item SCQ total</li>
+								<li>We progressively tweaked the model by trimming factors to iteratively improve the fit. The goal was to create a simplified model that met three attributes: it must align with the theory, be parsimonious (i.e., not overly complex and have good predictive power), and fit the data well.</li>
+								<li>The <b>χ2 difference test</b> as well as goodness of fit was used to compare whether our alternative models fit significantly better or worse than our hypothesized models.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section data-background-iframe="assets/FitMeasures.htm" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-color="#fff">
+					<h1>Full Model</h1>
+					<img src="assets/FullModel.svg" width=100% />
+				</section>
+				<section data-background-iframe="assets/FullModelFit.htm" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-iframe="assets/ModelTrimming.htm" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-color="#fff">
+					<h1>Final Model</h1>
+					<img src="assets/FinalModel.svg" width=100% />
+				</section>
+				<section data-background-iframe="assets/FinalModelFit.htm" data-background-interactive data-background-color="#fff">
+				</section>
+				<section data-background-color="#E1E9F9">
+					<h1>Item-level Analysis</h1>
+					<img src="assets/remixicons/Business/stack-line.svg" width=15% style="padding: .5em"  class="filter-dark"/>
+					<div class="r-hstack">
+						<div class='fragment' style="padding: .5em" width=30%>
+							To quantify the marginal effect of each determinant on the specific SCQ items, we ran the best-fitting SEM model for each of the 28 items and applied Bonferroni correction for multiple comparisons.
+						</div>
+					</div>
+				</section>
+				<section data-background-iframe="assets/ItemLevelTables.htm" data-background-interactive data-background-color="#fff">
+				</section>
+
+
+				<section data-background-color="#035B83">
+					<h1>Conclusions</h1>
+					<ul>
+						<li>Consistent with previous literature, we found a significant effect of IQ, Sensory Profile, Anxiety, Attention, Language, RRBs and SES on social communication difficulties, with RRBs and sensory atypicalities (two core diagnostic symptoms of ASD) having the most pronounced association.</li>
+						<li>Our item-level analysis also showed that RRBs and sensory atypicalities were significant factors for 27 out of 28 of the items. After correction for multiple comparisons, SES were not significant determinants of any of the items.</li>
+						<li>Our findings are a preliminary step toward determining potentially personalized  supports.</li>
+					</ul>
+				</section>
+				</section>
+	
+			</section>
+
+
+			<!-- Next Steps -->
+			<section>
+				<section data-background="assets/bg/Waihou.svg" data-background-color="#035B83">
+					<div class="fillbox">
+						<img src="assets/remixicons/Finance/funds-fill.svg" class="filter-light" width=55 />
+						<h1>Next Steps</h1>
+					</div>
+				</section>
+				<section data-background-color="#035B83">
+					<h1>Next Steps</h1>
+					<ul>
+						<li>Re-run SEM results using ABAS and CBCL social measures, keeping in mind comments about interpretation from committee</li>
+						<li>Prepare and submit manuscript for SEM paper</li>
+						<li>Apply supervised machine learning techniques (regression) to see which if these factors are predictive of SCQ score</li>
+						<li>Conduct multi-view clustering analysis to determine subgroups</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section data-background="assets/bg/Waihou.svg" data-background-color="#035B83">
+					<div class="fillbox">
+						<img src="assets/remixicons/Finance/funds-fill.svg" class="filter-light" width=55 />
+						<h1>Appendix</h1>
+					</div>
+				</section>
 				<section data-background-color="#7194D3">
 					<div class="r-hstack">
 						<div class='fragment' style="padding: .5em" width=60%>
@@ -86,19 +217,6 @@
 							</ol>
 						</div>
 						<img src="assets/remixicons/Communication/feedback-fill.svg" width=40% style="padding: .5em" class="filter-dark"/>
-					</div>
-				</section>
-				
-			</section>
-
-		
-
-			<!-- Changes -->
-			<section>
-				<section data-background="assets/bg/Ngaruroro.svg" data-background-color="#035B83">
-					<div class="fillbox">
-						<img src="assets/remixicons/Development/git-branch-line.svg" class="filter-light" width=50 />
-						<h1>Implementation of Changes</h1>
 					</div>
 				</section>
 				<section data-background-color="#f3e7e9">
@@ -169,30 +287,6 @@
 						</ol>
 					</div>
 				</section>
-				<section data-background-color="#f3e7e9">
-					<h1>Reducing Variables</h1>
-					<h2 style="text-transform: none;">49 variables → 18 variables</h2>
-					<div class="r-stack">
-						<img class="fragment fade-out" src="assets/Measures.svg" width=95% />
-						<img class="fragment"  src="assets/MeasuresNew.svg" width=95% />
-					</div>
-				</section>
-				<section data-background-color="#47549D">
-					<h1>Addressing Sample Size</h1>
-					<h2 style="text-transform: none;">n = 68 → n = 636</h2>
-					<p>The following steps helped to improve sample size:</p>
-					<ul>
-						<li>Reducing the number of factors and variables</li>
-						<li>Requesting the most up-to-date POND export</li>
-						<li>Combining language measures (i.e., OWLS-I, OWLS-II, PLS-4, PLS-5)</li>
-						<li>Combining CBCL 0-6 years and 6-18 years</li>
-						<li>For anxiety, SPENCE and RCADS were combined, but missing data was still significant. We opted to use CBCL — Anxiety Problems instead</li>
-						<li>Removed the need to apply a <u>"threshold of missingness"</u> to drop data</li>
-						<li>OCD group was dropped because low sample size (n=17)</li>
-					</ul>
-				</section>
-				<section data-background-iframe="assets/sampletable.htm" data-background-interactive data-background-color="#f3e7e9">
-				</section>
 				<section data-background-color="#DDE4EF">
 					<h1>Aligning the Objectives to Methods</h1><sup id="fnref:Methods"><a href="#fn:Objectives" rel="footnote">1</a></sup>
 					<div class="r-stack">
@@ -217,213 +311,131 @@
 					</div>
 				</section>
 				<section data-background-color="#47549D" data-background="assets/hexagons.png"
-					data-background-size="100px" data-background-repeat="repeat">
-					<div class='r-hstack'>
-						<div style="padding: .5em; width: 60%">
-							<img src="assets/GLM.svg" width=25% />
-							<h2>Generalized Equation Modelling (GLM)</h2>
-							<p>Many of the commonly used statistical techniques (e.g., multivariate regression, ANOVA (a
-								special case of regression), and canonical correlation) are based on the same
-								mathematical model
-								known as a general linear model (GLM)
-								<sup id="fnref:Blanthorne"><a href="#fn:Blanthorne" rel="footnote">1</a></sup>
-							</p>
-						</div>
-						<div class='fragment' style="padding: .5em; width: 40%">
-							<div>
-								<h3>PROS:</h3>
-								<ul>
-									<li>Results are easier to interpret</li>
-									<li>Straight forward implementation</li>
-								</ul>
-							</div>
-							<br>
-							<div>
-								<h3>CONS:</h3>
-								<ul>
-									<li>Multi-regression can only predict a single outcome variable</li>
-									<li>Issue of Collinearity</li>
-									<li>Cannot model indirect relationship</li>
-								</ul>
-							</div>
-
-						</div>
-
+				data-background-size="100px" data-background-repeat="repeat">
+				<div class='r-hstack'>
+					<div style="padding: .5em; width: 60%">
+						<img src="assets/GLM.svg" width=25% />
+						<h2>Generalized Equation Modelling (GLM)</h2>
+						<p>Many of the commonly used statistical techniques (e.g., multivariate regression, ANOVA (a
+							special case of regression), and canonical correlation) are based on the same
+							mathematical model
+							known as a general linear model (GLM)
+							<sup id="fnref:Blanthorne"><a href="#fn:Blanthorne" rel="footnote">1</a></sup>
+						</p>
 					</div>
-				</section>
-				<section data-background-color="#C4DD76" data-background="assets/hexagons.png"
-					data-background-size="100px" data-background-repeat="repeat">
-					<div class='r-hstack'>
-						<div style="padding: .5em; width: 60%">
-							<img src="assets/SEM.svg" width=25% />
-							<h2>Structural Equation Modelling (SEM)</h2>
-							<p>SEM refers to a group of statistical procedures (e.g., Factor Analysis, Path Analysis)
-								that give us insight relating to causal inference.
-								<sup id="fnref:Kline2015"><a href="#fn:Kline2015" rel="footnote">1</a></sup>
-							</p>
-						</div>
-						<div class='fragment' style="padding: .5em; width: 40%">
-							<div>
-								<h3>PROS:</h3>
-								<ul>
-									<li>Theory-based approach</li>
-									<li>Allows for the modelling of complex relationship</li>
-									<li>Ability to model latent variables</li>
-								</ul>
-							</div>
-							<br>
-							<div>
-								<h3>CONS:</h3>
-								<ul>
-									<li>Assumption of asymptomatic must be met</li>
-									<li>Sample size must be sufficiently to model complex relationships</li>
-									<li>Can lead to misleading results or non-convergences in the
-										computation, resulting in unattainable parameter estimates
-									</li>
-
-								</ul>
-							</div>
-
-						</div>
-
-					</div>
-				</section>
-				<section data-background-color="#37ABB7" data-background="assets/hexagons.png"
-					data-background-size="100px" data-background-repeat="repeat">
-					<div class='r-hstack'>
-						<div style="padding: .5em; width: 60%">
-							<img src="assets/Clustering.svg" width=25% />
-							<h2>Clustering</h2>
-							<p>Clustering is a form of unsupervised learning, where a group of data points is
-								partitioned into groups that contain points as similar as possible.
-								<sup id="fnref:Aggarwal2014"><a href="#fn:Aggarwal2014" rel="footnote">1</a></sup>
-							</p>
-						</div>
-						<div class='fragment' style="padding: .5em; width: 40%">
-							<div>
-								<h3>PROS:</h3>
-								<ul>
-									<li>Data-driven approach</li>
-									<li>Handles multidimensional data well</li>
-									<li>Allows for subgroup analysis (Objective 2)</li>
-								</ul>
-							</div>
-							<br>
-							<div>
-								<h3>CONS:</h3>
-								<ul>
-									<li>Clustering results can be difficult to interpret</li>
-									<li>Results are dependent on sample, prone to over-fitting</li>
-
-								</ul>
-							</div>
-
-						</div>
-
-					</div>
-				</section>
-				<!-- Citations -->
-				<div class="footnotes">
-					<ol>
-						<li class="footnote" id="fn:Kline2015">
-							<p>Kline, R. B. Principles and practice of structural equation modeling. (Guilford
-								publications, 2015).
-							</p>
-						</li>
-						<li class="footnote" id="fn:Aggarwal2014">
-							<p>Aggarwal, C. C. & Reddy, C. K. Data clustering. Algorithms Appl. ChapmanHallCRC Data Min.
-								Knowl. Discov. Ser. Londra (2014).
-							</p>
-						</li>
-						<li class="footnote" id="fn:Blanthorne">
-							<p>Blanthorne, C., Jones-Farmer, L. A. & Almer, E. D. Why you should consider SEM: A guide
-								to getting started. 32.
-							</p>
-						</li>
-					</ol>
-				</div>
-			</section>
-
-			<!-- SEM -->
-			<section>
-				<section data-background="assets/bg/Aare.svg" data-background-color="#035B83">
-					<div class="fillbox">
-						<img src="assets/remixicons/Business/calculator-fill.svg" class='filter-light' width=55 />
-						<h1>Structural Equation Modeling (SEM)</h1>
-					</div>
-				</section>
-				<section data-background-color="#E1E9F9">
-					<h1>Modeling Trimming Approach</h1>
-					<img src="assets/ModelTrimming.svg" width=20% style="padding: .5em" />
-					<div class="r-hstack">
-						<div class='fragment' style="padding: .5em" width=30%>
+					<div class='fragment' style="padding: .5em; width: 40%">
+						<div>
+							<h3>PROS:</h3>
 							<ul>
-								<li>We have chosen to take a model-trimming approach, where we start with our initial hypothesized model, a model which includes the <b>full set of features</b>, to predict the 28-item SCQ total</li>
-								<li>We progressively tweaked the model by trimming factors to iteratively improve the fit. The goal was to create a simplified model that met three attributes: it must align with the theory, be parsimonious (i.e., not overly complex and have good predictive power), and fit the data well.</li>
-								<li>The <b>χ2 difference test</b> as well as goodness of fit was used to compare whether our alternative models fit significantly better or worse than our hypothesized models.</li>
+								<li>Results are easier to interpret</li>
+								<li>Straight forward implementation</li>
 							</ul>
 						</div>
-					</div>
-				</section>
-				<section data-background-iframe="assets/FitMeasures.htm" data-background-interactive data-background-color="#fff">
-				</section>
-				<section data-background-color="#fff">
-					<h1>Full Model</h1>
-					<img src="assets/FullModel.svg" width=100% />
-				</section>
-				<section data-background-iframe="assets/FullModelFit.htm" data-background-interactive data-background-color="#fff">
-				</section>
-				<section data-background-iframe="assets/ModelTrimming.htm" data-background-interactive data-background-color="#fff">
-				</section>
-				<section data-background-color="#fff">
-					<h1>Final Model</h1>
-					<img src="assets/FinalModel.svg" width=100% />
-				</section>
-				<section data-background-iframe="assets/FinalModelFit.htm" data-background-interactive data-background-color="#fff">
-				</section>
-				<section data-background-color="#E1E9F9">
-					<h1>Item-level Analysis</h1>
-					<img src="assets/remixicons/Business/stack-line.svg" width=15% style="padding: .5em"  class="filter-dark"/>
-					<div class="r-hstack">
-						<div class='fragment' style="padding: .5em" width=30%>
-							To quantify the marginal effect of each determinant on the specific SCQ items, we ran the best-fitting SEM model for each of the 28 items and applied Bonferroni correction for multiple comparisons.
+						<br>
+						<div>
+							<h3>CONS:</h3>
+							<ul>
+								<li>Multi-regression can only predict a single outcome variable</li>
+								<li>Issue of Collinearity</li>
+								<li>Cannot model indirect relationship</li>
+							</ul>
 						</div>
+
 					</div>
-				</section>
-				<section data-background-iframe="assets/ItemLevelTables.htm" data-background-interactive data-background-color="#fff">
-				</section>
 
-
-				<section data-background-color="#035B83">
-					<h1>Conclusions</h1>
-					<ul>
-						<li>Consistent with previous literature, we found a significant effect of IQ, Sensory Profile, Anxiety, Attention, Language, RRBs and SES on social communication difficulties, with RRBs and sensory atypicalities (two core diagnostic symptoms of ASD) having the most pronounced association.</li>
-						<li>Our item-level analysis also showed that RRBs and sensory atypicalities were significant factors for 27 out of 28 of the items. After correction for multiple comparisons, SES were not significant determinants of any of the items.</li>
-						<li>Our findings are a preliminary step toward determining potentially personalized  supports.</li>
-					</ul>
-				</section>
-				</section>
-	
+				</div>
 			</section>
-
-		
-
-			<section>
-				<section data-background="assets/bg/Waihou.svg" data-background-color="#035B83">
-					<div class="fillbox">
-						<img src="assets/remixicons/Finance/funds-fill.svg" class="filter-light" width=55 />
-						<h1>Next Steps</h1>
+			<section data-background-color="#C4DD76" data-background="assets/hexagons.png"
+				data-background-size="100px" data-background-repeat="repeat">
+				<div class='r-hstack'>
+					<div style="padding: .5em; width: 60%">
+						<img src="assets/SEM.svg" width=25% />
+						<h2>Structural Equation Modelling (SEM)</h2>
+						<p>SEM refers to a group of statistical procedures (e.g., Factor Analysis, Path Analysis)
+							that give us insight relating to causal inference.
+							<sup id="fnref:Kline2015"><a href="#fn:Kline2015" rel="footnote">1</a></sup>
+						</p>
 					</div>
-				</section>
-				<section data-background-color="#035B83">
-					<h1>Next Steps</h1>
-					<ul>
-						<li>Re-run SEM results using ABAS and CBCL social measures, keeping in mind comments about interpretation from committee</li>
-						<li>Prepare and submit manuscript for SEM paper</li>
-						<li>Apply supervised machine learning techniques (regression) to see which if these factors are predictive of SCQ score</li>
-						<li>Conduct multi-view clustering analysis to determine subgroups</li>
-					</ul>
-				</section>
+					<div class='fragment' style="padding: .5em; width: 40%">
+						<div>
+							<h3>PROS:</h3>
+							<ul>
+								<li>Theory-based approach</li>
+								<li>Allows for the modelling of complex relationship</li>
+								<li>Ability to model latent variables</li>
+							</ul>
+						</div>
+						<br>
+						<div>
+							<h3>CONS:</h3>
+							<ul>
+								<li>Assumption of asymptomatic must be met</li>
+								<li>Sample size must be sufficiently to model complex relationships</li>
+								<li>Can lead to misleading results or non-convergences in the
+									computation, resulting in unattainable parameter estimates
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<section data-background-color="#37ABB7" data-background="assets/hexagons.png"
+				data-background-size="100px" data-background-repeat="repeat">
+				<div class='r-hstack'>
+					<div style="padding: .5em; width: 60%">
+						<img src="assets/Clustering.svg" width=25% />
+						<h2>Clustering</h2>
+						<p>Clustering is a form of unsupervised learning, where a group of data points is
+							partitioned into groups that contain points as similar as possible.
+							<sup id="fnref:Aggarwal2014"><a href="#fn:Aggarwal2014" rel="footnote">1</a></sup>
+						</p>
+					</div>
+					<div class='fragment' style="padding: .5em; width: 40%">
+						<div>
+							<h3>PROS:</h3>
+							<ul>
+								<li>Data-driven approach</li>
+								<li>Handles multidimensional data well</li>
+								<li>Allows for subgroup analysis (Objective 2)</li>
+							</ul>
+						</div>
+						<br>
+						<div>
+							<h3>CONS:</h3>
+							<ul>
+								<li>Clustering results can be difficult to interpret</li>
+								<li>Results are dependent on sample, prone to over-fitting</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- Citations -->
+			<div class="footnotes">
+				<ol>
+					<li class="footnote" id="fn:Kline2015">
+						<p>Kline, R. B. Principles and practice of structural equation modeling. (Guilford
+							publications, 2015).
+						</p>
+					</li>
+					<li class="footnote" id="fn:Aggarwal2014">
+						<p>Aggarwal, C. C. & Reddy, C. K. Data clustering. Algorithms Appl. ChapmanHallCRC Data Min.
+							Knowl. Discov. Ser. Londra (2014).
+						</p>
+					</li>
+					<li class="footnote" id="fn:Blanthorne">
+						<p>Blanthorne, C., Jones-Farmer, L. A. & Almer, E. D. Why you should consider SEM: A guide
+							to getting started. 32.
+						</p>
+					</li>
+				</ol>
+			</div>
 			</section>
 
 		</div>
